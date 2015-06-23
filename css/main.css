@@ -1,0 +1,420 @@
+/* Design by STUDIO7DESIGNS.com
+Company:	Nautica X - Opensourcetemplates.org
+File:		main.css - This contains all the main styles for the website.
+
+All the styles are separted into the following groups:
+Global Browser Reset - they make sure that all browsers start with the same default settings
+HTML, Body - for the html and body tags
+Layout - any style that defines how the site is laid out (position and size of objects)
+Nav - navigation bar
+Headings - headings like h1, h2, etc
+Text Styles - Styles for text
+Lists - unordered and ordered lists
+Forms - html forms
+Links - links
+Misc - anything that doesn't fit elsewhere
+*/
+
+/* @group Global Browser Reset */
+* {
+    padding: 0;
+    margin: 0 0 0 0px;
+}
+
+h1,h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address {
+    margin: 20px 0;
+}
+
+li, dd, blockquote {
+    margin-left: 40px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+img {
+    border: 0px;
+}
+/* @end */
+
+/* @group HTML, Body */
+body {
+    text-align: center;
+    font-size: 1em;
+    font-family: Verdana, sans-serif;
+}
+/* @end */
+
+/* @group Layout */
+div#outer-wrapper {
+    background: url(../images/body-bkg.gif) repeat-y top center;
+}
+
+div#inner-wrapper {
+    background: url(../images/header-bkg.gif) repeat-x;
+}
+
+div#content-wrapper {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+div#logo {
+  background:url(http://localhost:11261/images/logo-box-bkg.gif) no-repeat;
+  height:169px;
+  margin-left:14px;
+  margin-top:4px;
+  text-align:center;
+  width:196px;
+}
+
+div#logo img {
+        margin-top: 34px;
+        width: 121px;
+}
+
+div#sidebar {
+    float: left;
+    width: 208px;
+    display: inline;
+}
+
+div#content {
+    float: right;
+    width: 730px;
+    margin-right: 35px;
+    display: inline;
+    /*height: 351px;*/
+}
+
+div#content-inner {
+    margin-top: 20px;
+    padding: 1px 0;
+    background: url(../images/leaf-watermark.gif) no-repeat bottom right;
+}
+
+div.content-left {
+    padding: 4px;
+    width: 202px;
+    background-color: #d7d7d7;
+    float: left;
+    display: inline;
+}
+
+    div.content-left img {
+        border: 1px solid #fff;
+        height: 117px;
+    }
+    p.intro {
+        height: 23px;
+        font-size: 1.3em;
+    }
+    div.content-left p {
+        background-color: #dc3409;
+        margin: 4px 0 0 0 !important;
+        color: #fff;
+        text-align: center;
+        font-family: "Times New Roman", serif;
+        padding: 2px;
+        font-size: 1.3em;
+        border: 1px solid #fff;
+    }
+
+        div.content-left p span {
+            font-size: .8em;
+        }
+
+
+/*div.content-right {
+  display:inline;
+  float:left;
+  font-size:1.5em;
+  margin-left:4px;
+  width:725px;
+}*/
+div.content-right {
+	float: left;
+	margin-left: 20px;
+	width: 492px;
+	display: inline;
+}
+    
+
+div.content-details {
+    float: left;
+    margin-left: 20px;
+    width: 690px;
+    display: inline;
+    font-size: 10px;
+    
+}
+
+div.content-full {
+    clear: both;
+    padding-top: 15px;
+}
+
+p.end-story-links {
+    border-bottom: 4px solid #d1b9b3;
+    margin-bottom: 15px !important;
+    font-size: .8em;
+}
+
+div#footer {
+    clear: both;
+    border-top: 1px solid #5e534f;
+    background-color: #e7e5d2;
+    padding: 10px;
+}
+
+img.content-img {
+    float: left;
+    border: 2px solid #ccc;
+    margin: 0 10px 10px 0;
+}
+
+/* @end */
+
+/* @group Nav */
+ul#nav {
+  font-family:'Times New Roman', serif;
+  font-size:1.2em;
+  height:40px;
+  line-height:43px;
+  margin:0 0 20px;
+  overflow:visible;
+  width:426px;
+}
+
+    ul#nav li {
+        display: inline;
+        list-style-type: none;
+        text-transform: uppercase;
+        margin: 0 20px 0 0;
+    }
+
+        ul#nav li a:link, ul#nav li a:visited {
+            color: #7d7257;
+            text-decoration: none;
+        }
+
+        ul#nav li a:hover {
+            color: #3f3e3a;
+        }
+
+ul.side-nav {
+    margin: 10px 5px 10px 17px;
+    border-top: 1px solid #e9e7e7;
+    font-size: .7em;
+    color: #978f7c;
+    text-transform: uppercase;
+}
+
+    ul.side-nav li {
+        margin: 0;
+        list-style-type: none;
+        padding: 1px 0;
+    }
+
+        ul.side-nav li a {
+            display: block;
+            border-bottom: 1px solid #e9e7e7;
+            margin: 0;
+            padding: 10px 0 10px 20px;
+            background: url(../images/side-nav-bullet.gif) no-repeat 5px 50%;
+        }
+
+            ul.side-nav li a:link, ul.side-nav li a:visited {
+                color: #978f7c;
+                text-decoration: none;
+            }
+
+            ul.side-nav li a:hover {
+                background: url(../images/side-nav-bullet-light.gif) no-repeat 5px 50% #f6f5f0;
+                color: #cac6ba;
+            }
+
+ul#footer-nav {
+    font-family: "Times New Roman", serif;
+    font-size: .7em;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+    ul#footer-nav li {
+        display: inline;
+        margin: 0;
+        padding: 0 10px 0 5px;
+        border-right: 1px solid #958d83;
+    }
+
+        ul#footer-nav li.last {
+            border-right: none;
+        }
+
+        ul#footer-nav li a:link, ul#footer-nav li a:visited {
+            color: #5e534f;
+            text-decoration: none;
+        }
+
+        ul#footer-nav li a:hover {
+            color: #453e3b;
+        }
+/* @end */
+
+/* @group Headings */
+
+
+h2 {
+  /*color:rgb(5, 0, 0);*/
+  font-family:'Times New Roman', serif;
+  font-size: 1.3em;
+  font-weight:lighter;
+  margin:0;
+}
+h1.title {
+    color: black;
+    font-size: 1.4em;
+}
+h3.dateline {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #dc3409;
+    margin: 0 0 10px 0;
+}
+
+h4 {
+    margin-left: 33px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", serif;
+    color: #a1a09b;
+}
+
+h5 {
+}
+
+h6 {
+}
+/* @end */
+
+/* @group Text Styles */
+div#content-inner {
+    font-size: .75em;
+    color: #929291;
+    line-height: 1.7em;
+}
+
+  div#content-inner p {
+  font-size:1.3em;
+  margin:2px 0 30px;
+}
+
+p.intro:first-letter {
+    font-size: 1.4em;
+    letter-spacing: -1px;
+}
+
+p.copyright {
+    font-size: .65em;
+    font-family: "Times New Roman", serif;
+    color: #797069;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+/* @end */
+
+/* @group Lists */
+
+/* @end */
+
+/* @group Forms */
+form#search-form {
+    /*width: 150px;*/
+    float: right;
+    margin: 4px 0 0 0;
+    border-right: 1px solid #736749;
+    border-left: 1px solid #736749;
+    border-bottom: 1px solid #736749;
+    width: 302px;
+    height: 33px;
+    border-color: #7dc9e2;
+    border-width: 1px;
+}
+
+    form#search-form input.txt {
+        border-style: none;
+        border-color: inherit;
+        border-width: medium;
+        width: 285px;
+        /*border: 1px solid #736749;*/
+        /*border-top: 4px solid #635534;*/
+        margin: 1 0 0 0px;
+        padding: 4px;
+        background-color: #dbd6c9;
+        color: #fff;
+        text-transform: uppercase;
+        height: 20px;
+    }
+/* @end */
+
+/* @group Links - link visited hover active */
+div#content-inner a:link, div#content-inner a:visited {
+    color: #8b7f73;
+    text-decoration: none;
+    border-bottom: 1px dotted #8b7f73;
+}
+
+div#content-inner a:hover {
+    color: #706153;
+    border-bottom: 1px dotted #706153;
+}
+
+p.end-story-links a:link, p.end-story-links a:visited {
+    color: #8b7f73;
+    text-decoration: none;
+    border-bottom: none !important;
+}
+
+p.copyright a:link, p.copyright a:visited {
+    color: #797069;
+    text-decoration: none;
+}
+
+p.copyright a:hover {
+    color: #453e3b;
+}
+/* @end */
+
+/* @group Misc */
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+/* End hide from IE-mac */
+/* @end */
